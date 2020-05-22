@@ -3,6 +3,7 @@ package com.libraapps.api.controller;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -23,6 +24,9 @@ public class StudentController {
 	//agregar persistencia en base de datos mysql
 	@Autowired        //con esto le decimos a spring que injecte un objeto de este tipo
 	private IStudentService<StudentModel> service;
+	
+	private static final Logger logger = Logger.getLogger(StudentController.class);
+	
 	// post creamos
 	// put actualizamos
 	// get consultamos
@@ -31,7 +35,6 @@ public class StudentController {
 	//localhost:8080/students
 	@RequestMapping(method = RequestMethod.GET) // sino tambien puedo usar @GetMapping solo y ya lo configura para invocarlo por get.	
 	public ResponseEntity<?> getAll(){
-		
 		List<StudentModel> list = new ArrayList<StudentModel>();
 		list = this.service.findAll();
 		
@@ -43,9 +46,22 @@ public class StudentController {
 	
 	@RequestMapping(value = "/{dni}", method = RequestMethod.GET)	
 	public ResponseEntity<?> getById( @PathVariable("dni") String dni){
+		List<StudentValidationError> resp = new ArrayList<StudentValidationError>();
+		if (isNullOrEmpty(dni)) {
+			resp.add(new StudentValidationError("1", "EL DNI ES OBLIGATORIO"));
+		}else if (!validDni(dni)) {
+			resp.add(new StudentValidationError("1.1", "EL DNI ES INVALIDO"));
+		}
 		
-		StudentModel model = this.service.findById(dni);
-		return ResponseEntity.ok(model);		
+		if (resp.isEmpty()) {
+			StudentModel model = this.service.findById(dni);
+			return ResponseEntity.ok(model);	
+		}
+		else {
+			return new ResponseEntity (resp, HttpStatus.BAD_REQUEST);
+		}
+		
+			
 	}
 	
 	@RequestMapping(method = RequestMethod.POST) // agregar validaciones sobre los campos
