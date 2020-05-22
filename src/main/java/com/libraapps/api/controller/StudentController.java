@@ -55,7 +55,7 @@ public class StudentController {
 		return ResponseEntity.ok(model);		
 	}
 	
-	@RequestMapping(method = RequestMethod.POST) // agregar validaciones sobre los campos
+	@RequestMapping(method = RequestMethod.POST)
 	@ValidateModel
 	public ResponseEntity<?> create( @RequestBody StudentModel model){       
 		if (!this.service.existId(model.getDni())) {
@@ -66,7 +66,7 @@ public class StudentController {
 		}						
 	}		
 	
-	@RequestMapping(method = RequestMethod.PUT) 	// agregar validacion sobre los campos
+	@RequestMapping(method = RequestMethod.PUT)
 	@ValidateModel
 	public ResponseEntity<?> update( @RequestBody StudentModel model){		
 		if (!this.service.existId(model.getDni())) {			

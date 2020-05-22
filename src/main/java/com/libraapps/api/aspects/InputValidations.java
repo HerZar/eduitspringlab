@@ -22,33 +22,30 @@ public class InputValidations {
 	
 	@Around ("@annotation(com.libraapps.api.aspects.ValidateModel)")
 	public Object validateModel(ProceedingJoinPoint proceedingJoinPoint) {
-		logger.info("Validando por Modelo " + proceedingJoinPoint.getArgs().toString());
+		
 		Object resp = null;
 		try {
 			StudentModel model = (StudentModel)(proceedingJoinPoint.getArgs()[0]);
-			logger.info(model.toString());
+			logger.info("Validando por Modelo: " + model.toString());	
 			List<StudentValidationError> errores = validateModel(model);
 			if ( errores != null) {
 				resp = new ResponseEntity (errores , HttpStatus.NOT_ACCEPTABLE);
 			}else {
 				resp=proceedingJoinPoint.proceed();
-				logger.info("termino");
 			}
 		}catch (Throwable e) {
 			resp = new ResponseEntity(HttpStatus.BAD_REQUEST);
-		}
-		
+		}		
 		return resp;
 	}
 	
 	
 	@Around ("@annotation(com.libraapps.api.aspects.ValidateId)")
-	public Object validateId(ProceedingJoinPoint proceedingJoinPoint)  {
-		logger.info("Validando por id " + proceedingJoinPoint.getArgs().toString());
+	public Object validateId(ProceedingJoinPoint proceedingJoinPoint)  {		
 		Object resp = null;
 		try {
 			String id = (String)(proceedingJoinPoint.getArgs()[0]);
-			logger.info(id);
+			logger.info(String.format("Validando por id: %s ", id));
 			List<StudentValidationError> result = new ArrayList<StudentValidationError>();
 			if (isNullOrEmpty(id)) {
 				result.add(new StudentValidationError("1", "EL DNI ES OBLIGATORIO"));
@@ -58,7 +55,6 @@ public class InputValidations {
 			
 			if (result.isEmpty()) {
 				resp=proceedingJoinPoint.proceed();
-				logger.info("termino");
 			}
 			else {
 				resp = new ResponseEntity (result, HttpStatus.NOT_ACCEPTABLE);

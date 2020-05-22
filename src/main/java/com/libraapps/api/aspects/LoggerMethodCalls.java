@@ -15,9 +15,8 @@ public class LoggerMethodCalls {
 	private static final Logger logger = Logger.getLogger (LoggerMethodCalls.class);
 	
 	@Before ("execution(* com.libraapps.api.controller.*.*(..))")
-	public void logginmethod( JoinPoint joinpoint ) {
-		
-		logger.info("Se ejecuto el metodo: " + joinpoint.toShortString());
-		
+	public void logginmethod( JoinPoint joinpoint ) {		
+		logger.info("Se ejecuto el metodo: " + 
+	    joinpoint.toString().substring(10, joinpoint.toString().length()-1));		
 	}
 }
