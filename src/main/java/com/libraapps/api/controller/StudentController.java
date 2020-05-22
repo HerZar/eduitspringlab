@@ -27,8 +27,6 @@ public class StudentController {
 	@Autowired        //con esto le decimos a spring que injecte un objeto de este tipo
 	private IStudentService<StudentModel> service;
 	
-	private static final Logger logger = Logger.getLogger(StudentController.class);
-	
 	// post creamos
 	// put actualizamos
 	// get consultamos
@@ -43,64 +41,50 @@ public class StudentController {
 			return ResponseEntity.noContent().build();
 		}
 		return ResponseEntity.ok(list);		// envio la lista en el body de la respuesta...Como transforma la lista en json?
-	}
-	
+	}	
 	
 	@RequestMapping(value = "/{dni}", method = RequestMethod.GET)
-	//@ValidateId
+	@ValidateId
 	public ResponseEntity<?> getById( @PathVariable("dni") String dni){		
-			
-		StudentModel model = this.service.findById(dni);
-
+		StudentModel model = null;
+		if (this.service.existId(dni)) {
+			model = this.service.findById(dni);			
+		}else {
+			return new ResponseEntity ("El dni recibido no existe en la base de datos", HttpStatus.ALREADY_REPORTED);
+		}			
 		return ResponseEntity.ok(model);		
 	}
 	
 	@RequestMapping(method = RequestMethod.POST) // agregar validaciones sobre los campos
 	@ValidateModel
-	public ResponseEntity<?> create( @RequestBody StudentModel model){
-		ResponseEntity result = null;		
-        
+	public ResponseEntity<?> create( @RequestBody StudentModel model){       
 		if (!this.service.existId(model.getDni())) {
 			this.service.create(model);
-			result = new ResponseEntity ("El registro fue creado con exito" , HttpStatus.CREATED);
+			return new ResponseEntity ("El registro fue creado con exito" , HttpStatus.CREATED);
 		}else {
-			result = new ResponseEntity ("El dni recibido ya existe en la base de datos", HttpStatus.ALREADY_REPORTED);
-		}		
-		
-		return result;
+			return new ResponseEntity ("El dni recibido ya existe en la base de datos", HttpStatus.ALREADY_REPORTED);
+		}						
 	}		
 	
 	@RequestMapping(method = RequestMethod.PUT) 	// agregar validacion sobre los campos
 	@ValidateModel
-	public ResponseEntity<?> update( @RequestBody StudentModel model){
-		ResponseEntity result = null;
-		
+	public ResponseEntity<?> update( @RequestBody StudentModel model){		
 		if (!this.service.existId(model.getDni())) {			
-			result = new ResponseEntity ("El registro a actualizar no fue encontrado", HttpStatus.NOT_FOUND);
+			return new ResponseEntity ("El registro a actualizar no fue encontrado", HttpStatus.NOT_FOUND);
 		}else {
 			this.service.update(model);
-			result = new ResponseEntity ("El registro se actualizo correctamente", HttpStatus.OK);
-		}			
-		
-		return result;		
+			return new ResponseEntity ("El registro se actualizo correctamente", HttpStatus.OK);
+		}							
 	}
 	
 	@RequestMapping(value = "/{dni}", method = RequestMethod.DELETE)
 	@ValidateId
-	public ResponseEntity<?> delete( @PathVariable("dni") String dni){		
-		ResponseEntity result = null; 
-		
+	public ResponseEntity<?> delete( @PathVariable("dni") String dni){		 		
 		if (!this.service.existId(dni)) {			
-			result = new ResponseEntity ("El registro a borrar no fue encontrado",HttpStatus.NOT_FOUND);
+			return new ResponseEntity ("El registro a borrar no fue encontrado",HttpStatus.NOT_FOUND);
 		}else {
 			this.service.delete(dni);
-			result = new ResponseEntity ("El registro se borro correctamente",HttpStatus.OK);
+			return new ResponseEntity ("El registro se borro correctamente",HttpStatus.OK);
 		}				
-		
-		return result;				
-	}
-	
-	
-	
-	
+	}	
 }
