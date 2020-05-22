@@ -28,7 +28,8 @@ public class StudentServiceImpl implements IStudentService<StudentModel>{
 	
 	@Override
 	public  StudentModel findById (String dni) {
-		StudentEntity entity = repository.findById(dni).get();
+		StudentEntity entity = null; 
+				entity = repository.findById(dni).get();
 		StudentModel model = null;
 		if (entity != null) {
 			model = new StudentModel(entity.getName(), entity.getLastName(),entity.getDni(),entity.getEmail(),entity.getMobile());

@@ -63,5 +63,13 @@ public class StudentModel {
 	public void setMobile(String mobile) {
 		this.mobile = mobile;
 	}
+
+	@Override
+	public String toString() {
+		return "StudentModel [name=" + name + ", lastName=" + lastName + ", dni=" + dni + ", email=" + email
+				+ ", mobile=" + mobile + "]";
+	}
+	
+	
     
 }
