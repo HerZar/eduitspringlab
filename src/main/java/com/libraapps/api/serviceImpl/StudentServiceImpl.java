@@ -1,4 +1,4 @@
-package com.libraapps.api.service;
+package com.libraapps.api.serviceImpl;
 
 import java.util.List;
 import java.util.stream.Collector;
@@ -12,6 +12,7 @@ import org.springframework.stereotype.Service;
 import com.libraapps.api.entity.StudentEntity;
 import com.libraapps.api.model.StudentModel;
 import com.libraapps.api.repository.IStudentRepository;
+import com.libraapps.api.service.IStudentService;
 
 @Service ("studentServiceBean")
 public class StudentServiceImpl implements IStudentService<StudentModel>{
