@@ -1,0 +1,1000 @@
+  698  ls
+  699  ng new my-app
+  700  sudo apt install ng-common
+  701  ng new my-app
+  702  ng -v
+  703  sudo apt remove ng-common
+  704  ng new my-app
+  705  nano ~/.bashrc
+  706  sudo apt list --installed
+  707  sudo apt list --installed | grep 'Cli'
+  708  sudo apt list --installed | grep "Cli"
+  709  sudo apt list --installed | grep Cli
+  710  sudo apt list --installed
+  711  grep "cli" | sudo apt list --installed
+  712  sudo apt list --installed | grep Cli
+  713  dpkg --get-selections | grep Cli
+  714  dpkg --get-selections | grep cli
+  715  dpkg --get-selections | grep CLI
+  716  dpkg --get-selections | grep angular
+  717  node -v
+  718  npm -v
+  719  npm install -g @angular/cli
+  720  sudo npm install -g @angular/cli
+  721  pwd
+  722  cd Documentos/
+  723  cd Angular/
+  724  ls
+  725  ng new my-app
+  726  dpkg --get-selections | grep cli
+  727  dpkg --get-selections | grep Cli
+  728  nano ~/.bashrc
+  729  sudo apt-get install geany
+  730  cd Documentos/Angular/
+  731  ls
+  732  ng new my-app
+  733  sudo npm cache clean -f
+  734  sudo npm install -g n
+  735  sudo n stable
+  736  ng new my-app
+  737  ls
+  738  cd my-app
+  739  ng serve --open
+  740  cd ..
+  741  ng new angular-tour-of-heroes
+  742  ls
+  743  cd angular-tour-of-heroes/
+  744  ng serve --open
+  745  ng generate component heroes
+  746  cd Documentos/Angular/
+  747  cd angular-tour-of-heroes/
+  748  ng generate component heroes
+  749  cd Documentos/Angular/angular-tour-of-heroes/
+  750  ng generate component hero-detail
+  751  ng generate service hero
+  752  cd Documentos/Angular/angular-tour-of-heroes/
+  753  npm serve --open
+  754  ng serve --open
+  755  mvn -v
+  756  cd Documentos/Angular/a
+  757  cd Documentos/Angular/angular-tour-of-heroes/
+  758  ng serve --open
+  759  cd Documentos/Angular/a
+  760  cd Documentos/Angular/angular-tour-of-heroes/
+  761  ng generate module app-routing --flat --module=app
+  762  cd Documentos/Angular/angular-tour-of-heroes/
+  763  ng serve --open
+  764  cd Documentos/Angular/angular-tour-of-heroes/
+  765  ng generate component dashboard
+  766  cd Documentos/Angular/angular-tour-of-heroes/
+  767  ng serve --open
+  768  cd Documentos/Angular/angular-tour-of-heroes/
+  769  npm install angular-in-memory-web-api --save
+  770  ng generate service InMemoryData
+  771  cd Documentos/Angular/barncarizacion-digital/
+  772  ng generate component tienecuenta
+  773  ng generate component bcd-login
+  774  ng generate component bcd-registro
+  775  cd Documentos/Angular/barncarizacion-digital/
+  776  ng serve --open
+  777  cd ..
+  778  ng serve --open
+  779  cd Documentos/Angular/barncarizacion-digital/
+  780  cd
+  781  firebase init
+  782  firebase deploy
+  783  ng build --prod
+  784  cd Documentos/Angular/barncarizacion-digital/
+  785  firebase init
+  786  firebase deploy
+  787  cd Documentos/Angular/barncarizacion-digital/
+  788  ng serve --open
+  789  git -v
+  790  git --version
+  791  add-apt-repository ppa:git-core/ppa # apt update; apt install git
+  792  sudo add-apt-repository ppa:git-core/ppa # apt update; apt install git
+  793  git --version
+  794  apt-get install git
+  795  sudo apt-get install git
+  796  git --version
+  797  git config --global user.name "HernanZ"
+  798  git config --global user.email "hernanzarzycki@gmail.com"
+  799  git config --list
+  800  exit
+  801  git status
+  802  git init
+  803  git status
+  804  cd ..
+  805  cd pruebaGit/
+  806  git status
+  807  git add "git tips"
+  808  git add git tips
+  809  git add 'git tips'
+  810  git add './git tips'
+  811  git add "Git tips"
+  812  git status
+  813  git commit -m "agrego git tips"
+  814  git status
+  815  git commit -m "agrego index.html de prueba"
+  816  git status
+  817  git add index.html
+  818  git status
+  819  git commit -m "agrego index.html de prueba"
+  820  git status
+  821  git checkout index.html
+  822  git status
+  823  git status 
+  824  git add index.html
+  825  git status
+  826  git commit -m "actualize el index"
+  827  git log
+  828  git checkout e7801f4f511f901b7f8887b0512174cdb588f481
+  829  status
+  830  git status
+  831  git checkout master
+  832  git status
+  833  git checkout e7801f4f511f901b7f8887b0512174cdb588f481
+  834  status
+  835  git status
+  836  git switch -
+  837  git status
+  838  git checkout e7801f4f511f901b7f8887b0512174cdb588f481
+  839  git status
+  840  git add .
+  841  git status
+  842  git commit -m "modifique registro en la segunda rama"
+  843  git switch -
+  844  git status
+  845  git checkout e7801f4f511f901b7f8887b0512174cdb588f481
+  846  git branch segundaRama df2efb8
+  847  git checkout segundaRama
+  848  log
+  849  git log
+  850  git checkout master
+  851  git log
+  852  git merge segundaRama
+  853  git status
+  854  git branch
+  855  git rm -d segundaRama
+  856  git branch -d segundaRama
+  857  git branch
+  858  git status
+  859  git add .
+  860  git commit -m " actualizado git tips con borrado de branch"
+  861  git add .
+  862  git commit -m "agregue a git tips como hacer un merge"
+  863  git log
+  864  exit
+  865  git status
+  866  git branch
+  867  git remote add origin https://github.com/HerZar/pruebaGit.git
+  868  git status
+  869  git push -u origin master
+  870  git --version
+  871  git status
+  872  git fetch
+  873  git status
+  874  git pull
+  875  git status
+  876  git fetch
+  877  git status
+  878  git add index.html
+  879  git status
+  880  git add .
+  881  git status
+  882  git commit -m "cambio enunix"
+  883  git status
+  884  git push
+  885  git status
+  886  git fetch
+  887  git status
+  888  git pull
+  889  git status
+  890  git add .
+  891  git commit -m "cambio en unix de nuevo"
+  892  git status
+  893  git fetch
+  894  git status
+  895  git show
+  896  git status
+  897  git pull
+  898  git branch -b mi cambio
+  899  git branch -b miCambio
+  900  git branch
+  901  git branch -b miCambio
+  902  git status
+  903  git add .
+  904  git commit -m "cambio en unix de nuevo"
+  905  git fetch
+  906  git status
+  907  git push
+  908  git status
+  909  git add .
+  910  git commit -m "cambio unix"
+  911  git status
+  912  git add .
+  913  git commit -m "cambio unix"
+  914  git status
+  915  git fetch
+  916  git status
+  917  git pull
+  918  git status
+  919  git push
+  920  git pull
+  921  git add .
+  922  git commit -m "cambio unix"
+  923  git push
+  924  git status
+  925  git init
+  926  git status
+  927  git add .
+  928  git commit
+  929  git status
+  930  git remote add origin https://github.com/HerZar/eduitspringlab.git
+  931  git push
+  932  git push -u origin master
+  933  git status
+  934  git checkout .
+  935  git status
+  936  git branch automaticgetset
+  937  git branch
+  938  git checkout automaticgetset 
+  939  git status
+  940  git log
+  941  git status
+  942  git add .
+  943  git status
+  944  git commit -m "adding lombok repository at pom and traing to use automatic getters and setters"
+  945  git status
+  946  git branch master
+  947  git checkout master
+  948  git checkout automaticgetset 
+  949  maven clian install
+  950  mvn clean install
+  951  mvn -version
+  952  mvn clean install
+  953  mvn clean install -e
+  954  mvn clean install -X
+  955  mvn clean install
+  956  git branch
+  957  git checkout master
+  958  git status
+  959  git checkout StudentEntity.java
+  960  git checkout src/main/java/com/libraapps/api/entity/StudentEntity.java
+  961  gitstatus
+  962  git status
+  963  git checkount master
+  964  git status
+  965  git checkout master
+  966  git status
+  967  java -jar lombok-1.18.8.jar
+  968  cd ..
+  969  ng serve --open
+  970  exit
+  971  cd Documentos/
+  972  ls
+  973  cd Angular/
+  974  ls
+  975  cd angular-tour-of-heroes/
+  976  ng generate componet hero-search
+  977  ng generate component hero-search
+  978  ls
+  979  git init
+  980  git status
+  981  git add .
+  982  git status
+  983  git commit -m "tour of heros with mock rest service"
+  984  git status
+  985  exit
+  986  git init
+  987  git status
+  988  git add .
+  989  git status
+  990  git commit -m "initial release general structure"
+  991  git status
+  992  pwd
+  993  ls
+  994  cd Documentos/
+  995  ls
+  996  cd CursoSpring/
+  997  ls
+  998  cd tourofheroes/
+  999  git status
+ 1000  git add .
+ 1001  git commit -m "corregido error de compilacion de repositorio"
+ 1002  git status
+ 1003  exit
+ 1004  git status
+ 1005  git add .
+ 1006  git status
+ 1007  get log
+ 1008  git log
+ 1009  git commit -m "Agregué validacion a getbyId. Agregue aspecto para logear la ejecucion de cada metodo del controler"
+ 1010  git status
+ 1011  git branch validacion_con_aspectos
+ 1012  git branch
+ 1013  git checkout validacion_con_aspectos
+ 1014  git status
+ 1015  git branch
+ 1016  git checkout master
+ 1017  get status
+ 1018  git status
+ 1019  git branch
+ 1020  git status
+ 1021  git branch validacion_con_aspectos
+ 1022  git checkout validacion_con_aspectos
+ 1023  git status
+ 1024  git add .
+ 1025  git status
+ 1026  git commit -m "agregue validacion por anotaciones"
+ 1027  git status
+ 1028  git checout master
+ 1029  git checkout master
+ 1030  git status
+ 1031  cd Documentos/CursoSpring/
+ 1032  ls
+ 1033  cd DescargaLab/
+ 1034  ls
+ 1035  cd student.crud/
+ 1036  git log
+ 1037  git checkout b1f5ff80c913f8295a39a59bd4027e9535236dc9
+ 1038  git status
+ 1039  git checkout master
+ 1040  git status
+ 1041  git checkout validacion_con_aspectos 
+ 1042  git status
+ 1043  git add .
+ 1044  git commit -m "cambios menores en controler"
+ 1045  git status
+ 1046  git log
+ 1047  git checkout master
+ 1048  git merge validacion_con_aspectos 
+ 1049  git status
+ 1050  git log
+ 1051  git status
+ 1052  git push origin/master
+ 1053  git push
+ 1054  git status
+ 1055  exit
+ 1056  git status
+ 1057  git commit -m "cambios menores"
+ 1058  git add .
+ 1059  cd ..
+ 1060  git status
+ 1061  git add .
+ 1062  git commit -m "cambios menores"
+ 1063  git status
+ 1064  git push
+ 1065  git clone https://github.com/HerZar/TaskTimeTraker.git
+ 1066  chmod 777 kvm
+ 1067  cd ..
+ 1068  ls
+ 1069  chmod 777 kvm
+ 1070  sudo chmod 777 kvm
+ 1071  git init
+ 1072  git status
+ 1073  git add .
+ 1074  git commit -m "initial commit"
+ 1075  exit
+ 1076  git status
+ 1077  git init
+ 1078  git status
+ 1079  git add .
+ 1080  git commit -m "initial commit"
+ 1081  cd Documentos/
+ 1082  ls
+ 1083  cd ..
+ 1084  ls
+ 1085  exit
+ 1086  pwd
+ 1087  cd..
+ 1088  cd ..
+ 1089  ls
+ 1090  cd pwd
+ 1091  pw
+ 1092  pwd
+ 1093  cd ../..
+ 1094  ls
+ 1095  cd dev
+ 1096  sudo chmod 777 kvm
+ 1097  exit
+ 1098  git status
+ 1099  git reset
+ 1100  git status
+ 1101  git add .
+ 1102  git status
+ 1103  git commit -m "agregue el recycle view con una lista de testeos de presion de ejemplo/prueba"
+ 1104  git status
+ 1105  exit
+ 1106  git status
+ 1107  git log
+ 1108  git add .
+ 1109  git status
+ 1110  git commit -m "agregue diseño de activity/dialogo para editar o agregar una medicion"
+ 1111  git status
+ 1112  git log
+ 1113  git status
+ 1114  git add .
+ 1115  git commit -m "agregue el dialogopara editar una medicion"
+ 1116  git status
+ 1117  git log
+ 1118  git checkout 3d9120
+ 1119  git log
+ 1120  git checkout 57a5683b3ea2bbe14734fa698a395ed4f43d9120
+ 1121  git status
+ 1122  git checkout master
+ 1123  git status
+ 1124  git log
+ 1125  git status
+ 1126  git branch
+ 1127  git checkout master
+ 1128  git stash
+ 1129  git staty
+ 1130  git status
+ 1131  git checkout master
+ 1132  git status
+ 1133  gir reset head .
+ 1134  git status
+ 1135  git reset head .
+ 1136  git status
+ 1137  gir reset head .idea/codeStyles/Project.xml
+ 1138  git reset head .idea/codeStyles/Project.xml
+ 1139  git commit -m "porque si"
+ 1140  git checkout master
+ 1141  git add .
+ 1142  git commit -m "porque si"
+ 1143  git checkout master
+ 1144  git status
+ 1145  git log
+ 1146  git barch
+ 1147  git branch
+ 1148  git log
+ 1149  git checkout 6189d7a491ed537b6a9205dd04347ab591cd42dd
+ 1150  git status
+ 1151  git app/src/main/AndroidManifest.xml
+ 1152  git status
+ 1153  git add .
+ 1154  git commit -m "porque si"
+ 1155  git checkout master
+ 1156  git status
+ 1157  git branch
+ 1158  git log
+ 1159  git checkout 57a5683b3ea2bbe14734fa698a395ed4f43d9120
+ 1160  git status
+ 1161  git branch -b funcionando
+ 1162  git status
+ 1163  git add .
+ 1164  git status
+ 1165  git commit -m "cambios en proyect"
+ 1166  git status
+ 1167  git branch
+ 1168  git branch -b funcionando
+ 1169  git branch  funcionando
+ 1170  git branch
+ 1171  git checkout master
+ 1172  git status
+ 1173  git branch
+ 1174  exit
+ 1175  cd ..
+ 1176  chmod 777 kvm
+ 1177  sudo chmod 777 kvm
+ 1178  cd /usr
+ 1179  pwd
+ 1180  cd
+ 1181  pwd
+ 1182  cd /usr
+ 1183  ls
+ 1184  cd
+ 1185  cd /dev
+ 1186  ls
+ 1187  ls
+ 1188  grantsforemulator.sh
+ 1189  run grantsforemulator.sh 
+ 1190  chmod 777 grantsforemulator.sh 
+ 1191  ./grantsforemulator.sh 
+ 1192  ls
+ 1193  cd PresureTraker/
+ 1194  git status
+ 1195  git branch
+ 1196  git chekout funcionando
+ 1197  git checkout funcionando
+ 1198  git status
+ 1199  git add .
+ 1200  git commit -m "adding dialog"
+ 1201  git branch master
+ 1202  git branch funcionando
+ 1203  git checkout master
+ 1204  git status
+ 1205  git checkout master
+ 1206  git branch funcionando
+ 1207  git checkout funcionando
+ 1208  git status
+ 1209  git commit -m "adding values"
+ 1210  git add .
+ 1211  git commit -m "adding values"
+ 1212  git checkout master
+ 1213  git checkout funcionando
+ 1214  pwd
+ 1215  ls
+ 1216  cd Documentos/
+ 1217  cd
+ 1218  ls LibraApps/
+ 1219  ls
+ 1220  cd LibraApps/
+ 1221  ls
+ 1222  chmod 777 grantsforemulator.sh 
+ 1223  run grantsforemulator.sh 
+ 1224  run ./grantsforemulator.sh 
+ 1225  ./grantsforemulator.sh 
+ 1226  ls
+ 1227  cd PresureTraker/
+ 1228  git status
+ 1229  git branch
+ 1230  cd LibraApps/
+ 1231  ls
+ 1232  chmod 777 grantsforemulator.sh 
+ 1233  ./grantsforemulator.sh 
+ 1234  cd PresureTraker/
+ 1235  ls
+ 1236  git status
+ 1237  git add .
+ 1238  git commit -m "workfing first release of dialogPresure"
+ 1239  git status
+ 1240  git branch
+ 1241  git merge -s ours master
+ 1242  git checkout master
+ 1243  git merge funcionando 
+ 1244  git status
+ 1245  git branch
+ 1246  git branch -d funcionando
+ 1247  git status
+ 1248  cd Documentos/
+ 1249  cd 
+ 1250  cd LibraApps/
+ 1251  ls
+ 1252  chmod 777 grantsforemulator.sh
+ 1253  ./grantsforemulator.sh 
+ 1254  cd PresureTraker/
+ 1255  ls
+ 1256  git status
+ 1257  git branch
+ 1258  git branch workingBranch
+ 1259  git branch
+ 1260  git checkout workingBranch 
+ 1261  git status
+ 1262  git reset
+ 1263  git status
+ 1264  git rollback
+ 1265  git revert
+ 1266  git revert head
+ 1267  git revert HEAD
+ 1268  git status
+ 1269  git restore
+ 1270  git restore .
+ 1271  git status
+ 1272  git add .
+ 1273  git commit -m "modificado .gitignore"
+ 1274  git status
+ 1275  git add .
+ 1276  git branch
+ 1277  git commit -m "agregado onclick listener para el recyclerAdapter"
+ 1278  git status
+ 1279  git add .
+ 1280  git status
+ 1281  git commit -m "agregue el servicio presure y agregue el dao para presureentity"
+ 1282  git status
+ 1283  exit
+ 1284  cd L
+ 1285  cd LibraApps/
+ 1286  ls
+ 1287  chmod 777 grantsforemulator.sh 
+ 1288  ./grantsforemulator.sh 
+ 1289  cd PresureTraker/
+ 1290  ls
+ 1291  sudo apt update
+ 1292  sudo apt upgrade
+ 1293  sudo reboot
+ 1294  ls
+ 1295  cd LibraApps/
+ 1296  ls
+ 1297  chmod 777 grantsforemulator.sh 
+ 1298  ./grantsforemulator.sh 
+ 1299  cd PresureTraker/
+ 1300  git status
+ 1301  sudo apt-get update
+ 1302  sudo apt-get install joystick
+ 1303  sudo apt-get install jscalibrator
+ 1304  sudo apt-get install gawk mawk gcc gcc-multilib gcc-4.5 gcc-4.5-base gcc-4.5-locales gcc-4.5-multilib gcc-4.5-plugin-dev intltool intltool-debian gettext gettext-base liblocale-gettext-perl libgettext-ruby1.8 perl perl-base perl-modules libperl5.10 pkg-config libxml2 libxml2-dev libxml2-utils python-libxml2 libglib2.0-0 libglib2.0-bin libglib2.0-data libglib2.0-dev libgtk2.0-0 libgtk2.0-bin libgtk2.0-common python-gtk2 libgtk2.0-dev libglade2-0 libglade2-dev python-glade2 libsdl-sge-dev libsdl-perl libsdl-ruby libsdl-ruby1.8 libsdl-gfx1.2-dev libsdl-ttf2.0-dev libsdl-console-dev libsdl1.2-dev libsdl-image1.2-dev libsdl-mixer1.2-dev libsdl-net1.2-dev libsdl-sound1.2-dev gstreamer0.10-sdl libsdl-ocaml-dev libsdl-pango-dev libguichan-sdl-0.8.1-1 zlib-bin zlib1g zlib1g-dev libxvmc1 libxv-dev libxv1 libxcb-xv0 libxcb-xtest0 subversion libtool nasm libbz2-dev automake autoconf libxxf86vm-dev x11proto-record-dev libxtst-dev libgmp3-dev libcdio-dev libsndfile1-dev
+ 1305  ls
+ 1306  ./PCSX2
+ 1307  ./PCSX2-linux.sh 
+ 1308  sudo dpkg --add-architecture i386
+ 1309  sudo add-apt-repository ppa:gregory-hainaut/pcsx2.official.ppa
+ 1310  sudo apt-get update
+ 1311  sudo apt-get install pcsx2
+ 1312  lsusb
+ 1313  ls
+ 1314  cd LibraApps/
+ 1315  ls
+ 1316  cd ..
+ 1317  ls
+ 1318  Documentos/
+ 1319  ls
+ 1320  cd Documentos/
+ 1321  ls
+ 1322  cd CursoSpring/
+ 1323  ls
+ 1324  cd Clases/
+ 1325  ls
+ 1326  cd ..
+ 1327  ls
+ 1328  cd DescargaLab/
+ 1329  ls
+ 1330  cd ..
+ 1331  ls
+ 1332  cd Angular/
+ 1333  ls
+ 1334  ng new angular_student_crud
+ 1335  ng new angular-student-crud
+ 1336  ls
+ 1337  cd angular-student-crud/
+ 1338  ls
+ 1339  git init
+ 1340  cd ..
+ 1341  cd angular-tour-of-heroes/
+ 1342  ls
+ 1343  cd ..
+ 1344  cd barncarizacion-digital/
+ 1345  ls
+ 1346  git status
+ 1347  cd ..
+ 1348  cd angular-student-crud/
+ 1349  ls
+ 1350  ng create component studiante
+ 1351  ng generate component studiante
+ 1352  ng serve --open
+ 1353  cd Documentos/
+ 1354  ls
+ 1355  cd Angular/
+ 1356  ls
+ 1357  cd angular-student-crud/
+ 1358  ls
+ 1359  ng generate component student-list
+ 1360  ng generate service student
+ 1361  cd Documentos/Angular/
+ 1362  cd angular-student-crud/
+ 1363  ls
+ 1364  ng serve --open
+ 1365  cd Documentos/Angular/angular-student-crud/
+ 1366  ng serve --open
+ 1367  cd Documentos/Angular/angular-student-crud/
+ 1368  ng serve open
+ 1369  ng serve --open
+ 1370  sudo apt-get update -y
+ 1371  sudo apt-get install -y mplayer
+ 1372  sudo apt-get install gddrescue
+ 1373  sudo ddrescue /dev/sdb /dev/sdb
+ 1374  sudo apt-get install dosfstools
+ 1375  sudo dosfsck -t -a -w /dev/sdb
+ 1376  sudo fdisk -l
+ 1377  fdisk /dev/sdb
+ 1378  lsblk
+ 1379  sudo umount /dev/sdb
+ 1380  sudo fsck.vfat -f -v /dev/sdb
+ 1381  sudo fsck-vfat -f -p /dev/sdb
+ 1382  sudo fsck.vfat -f -p /dev/sdb
+ 1383  sudo fdisk /dev/sdb
+ 1384  sudo hdparm -r0 /dev/sdb
+ 1385  sudo fdisk /dev/sdb
+ 1386  dd if =dev/zero of =/dev/sdb
+ 1387  dd if=dev/zero of=/dev/sdb
+ 1388  dd if=/dev/zero of=/dev/sdb
+ 1389  diskutil list
+ 1390  sudo dd if=/dev/zero of=/dev/sdb
+ 1391  hdparm –write-sector 1 –yes-i-know-what-i-am-doing /dev/sdb
+ 1392  hdparm
+ 1393  hdparm -–write-sector 1 –yes-i-know-what-i-am-doing /dev/sdb
+ 1394  hdparm --write-sector 1 -yes-i-know-what-i-am-doing /dev/sdb
+ 1395  hdparm -write-sector 1 -yes-i-know-what-i-am-doing /dev/sdb
+ 1396  hdparm --write-sector 1 --yes-i-know-what-i-am-doing /dev/sdb
+ 1397  sudo hdparm --write-sector 1 --yes-i-know-what-i-am-doing /dev/sdb
+ 1398  sudo dd if=/dev/zero of=/dev/sdb
+ 1399  gdisk /dev/sdb1
+ 1400  sudo gdisk /dev/sdb1
+ 1401  gdisk /dev/sdb1
+ 1402  sudo gdisk /dev/sdb1
+ 1403  gdisk /dev/sdb1
+ 1404  sudo fdisk -l /dev/sdb1
+ 1405  sudo gdisk /dev/sdb1
+ 1406  gdisk -l /dev/sdb1
+ 1407  sudo gdisk /dev/sdb1
+ 1408  sudo gdisk -l /dev/sdb1
+ 1409  parted /dev/sdb1 print | grep -i '^Partition Table'
+ 1410  sudo parted /dev/sdb1 print | grep -i '^Partition Table'
+ 1411  sudo gdisk -l /dev/sdb1 | grep -A4 '^Partition table scan:'
+ 1412  sudo gdisk -l /dev/sdb1
+ 1413  sudo gdisk  /dev/sdb1
+ 1414  sudo fdisk -l
+ 1415  sudo gdisk
+ 1416  sudo fdisk -l
+ 1417  sudo apt-get install gdisk
+ 1418  sudo gdisk
+ 1419  sudo gdisk 
+ 1420  sudo gdisk  /dev/sdb1
+ 1421  partprobe
+ 1422  clear
+ 1423  sudo gdisk -l /dev/sdb1
+ 1424  ls
+ 1425  cd Documentos/
+ 1426  ls
+ 1427  cd Documentos/
+ 1428  ls
+ 1429  cd ..
+ 1430  ls
+ 1431  cd CursoSpring/
+ 1432  ls
+ 1433  cd DescargaLab/
+ 1434  ls
+ 1435  cd student.crud/
+ 1436  ls
+ 1437  touch Dockerfile
+ 1438  ls
+ 1439  nano Dockerfile
+ 1440  nano Dockerfile 
+ 1441  sudo docker ps
+ 1442  sudo docker ps -a
+ 1443  pwd
+ 1444  cd Documentos/
+ 1445  cd CursoSpring/
+ 1446  ls
+ 1447  cd DescargaLab/
+ 1448  ls
+ 1449  cd student.crud/
+ 1450  ls
+ 1451  sudo docker image ls
+ 1452  sudo docker build -t spring_boot_studentcrud
+ 1453  sudo docker build -t spring_boot_studentcrud .
+ 1454  sudo docker run -it ubuntu
+ 1455  sudo docker ps
+ 1456  pwd
+ 1457  git status
+ 1458  git add .
+ 1459  git status
+ 1460  git commit -m "adding docker file"
+ 1461  git status
+ 1462  mvn clean install package
+ 1463  java -jar ./target/student.crud-0.0.1-SNAPSHOT.jar 
+ 1464  sudo docker build -t spring_boot_studentcrud .
+ 1465  sudo docker run -it ubuntu
+ 1466  sudo docker build -t spring_boot_studentcrud .
+ 1467  apt-get update
+ 1468  sudo apt-get update
+ 1469  sudo docker build -t spring_boot_studentcrud .
+ 1470  y
+ 1471  sudo docker build -t spring_boot_studentcrud .
+ 1472  sudo docker image ls
+ 1473  sudo docker build -t spring_boot_studentcrud .
+ 1474  clear
+ 1475  sudo docker build -t spring_boot_studentcrud .
+ 1476  clear
+ 1477  sudo docker build -t spring_boot_studentcrud .
+ 1478  sudo docker images ps
+ 1479  sudo docker images ls
+ 1480  sudo docker ls -a
+ 1481  sudo docker ps -a
+ 1482  sudo docker ps
+ 1483  sudo docker image ls
+ 1484  sudo docker -it spring_boot_studentcrud
+ 1485  sudo docker run -it spring_boot_studentcrud
+ 1486  sudo docker run -d -p 8080:8080 spring_boot_studentcrud
+ 1487  sudo docker ps
+ 1488  sudo docker stop ed2a891acd7e
+ 1489  sudo docker run -d -p 8080:8080 spring_boot_studentcrud
+ 1490  sudo docker ps
+ 1491  sudo docker stop 51271594eba2
+ 1492  sudo docker ps
+ 1493  exit
+ 1494  kubectl get nodes
+ 1495  minikube start
+ 1496  kubectl get nodes
+ 1497  kubectl get pods
+ 1498  kubectl run nginx --image=nginx
+ 1499  kubectl get pods
+ 1500  kubectl describe pod nginx
+ 1501  clear
+ 1502  kubectl get pods -o wode
+ 1503  kubectl get pods -o wide
+ 1504  kubectl stop pod nginx
+ 1505  kubectl --help
+ 1506  kubectl delete pod nginx
+ 1507  kubectl get pods
+ 1508  minikube stop
+ 1509  exit
+ 1510  minikube start
+ 1511  ls
+ 1512  cat nginx.yaml 
+ 1513  clear
+ 1514  cat nginx.yaml 
+ 1515  kubectl get node
+ 1516  ls
+ 1517  mv nginx.yaml nginx.yml
+ 1518  ls
+ 1519  kubectl create -f nginx.yml 
+ 1520  kubectl get pods
+ 1521  kubectl get pods -o wede
+ 1522  kubectl get pods -o 
+ 1523  kubectl get --help
+ 1524  kubectl get pods -o wide
+ 1525  kubectl delete pod nginx-2
+ 1526  ls
+ 1527  vim nginx.yml 
+ 1528  sudo apt install vim
+ 1529  vim nginx.yml 
+ 1530  cat nginx.yml 
+ 1531  kubectl create -f nginx.yml 
+ 1532  kubectl get pods -o wide
+ 1533  kubectl delete pod nginx-3
+ 1534  kubectl get pods -o wide
+ 1535  minikube stop
+ 1536  ls
+ 1537  nano nginx.yml 
+ 1538  vim
+ 1539  ls
+ 1540  cat holavim
+ 1541  vim
+ 1542  cd Documentos/
+ 1543  ls
+ 1544  cd Kubernetes-curse/
+ 1545  ls
+ 1546  minikube start
+ 1547  clear
+ 1548  kubectl create -f rc-definition.yml 
+ 1549  kubectl get replicationcontroller
+ 1550  kubectl get pods
+ 1551  kubectl delete pod myapp-rc-lbrns
+ 1552  kubectl get pods
+ 1553  kubectl delete pod myapp-rc-xbtr8
+ 1554  kubectl get pods
+ 1555  kubectl delete myapp-rc
+ 1556  kubectl get replicationcontroller
+ 1557  kubectl delete replicationcontroller myapp-rc
+ 1558  kubectl get pods
+ 1559  clear
+ 1560  ls
+ 1561  kubectl create -f replicaset-definition.yml 
+ 1562  ls
+ 1563  clear
+ 1564  kubectl get replicaset
+ 1565  kubectl get pods
+ 1566  kubectl delete pod myapp-replicaset-59srg
+ 1567  kubectl get pods
+ 1568  kubectl delete replicaset myapp-replicaset
+ 1569  kubectl get pods
+ 1570  kubectl get replicaset
+ 1571  clear
+ 1572  cd 
+ 1573  cd Documentos/
+ 1574  ls
+ 1575  cd CursoSpring/
+ 1576  ls
+ 1577  cd DescargaLab/
+ 1578  ls
+ 1579  cd student.crud/
+ 1580  ls
+ 1581  clear
+ 1582  ls
+ 1583  docker -version4
+ 1584  docker -version
+ 1585  docker -v
+ 1586  clear
+ 1587  docker start
+ 1588  ls
+ 1589  docker -a
+ 1590  docker image ls
+ 1591  sudo docker image ls
+ 1592  sudo docker ps
+ 1593  sudo docker run -d -p 8080:8080 spring_boot_studentcrud
+ 1594  sudo docker ps
+ 1595  minikube get pod
+ 1596  kubectl get pod
+ 1597  minijuve status
+ 1598  minijuve start
+ 1599  minikube status
+ 1600  minikube start
+ 1601  minikube status
+ 1602  kubectl get nodes
+ 1603  kubectl create deployment hello-minikube --image=k8s.gcr.io/echoserver:1.10
+ 1604  kubectl get nodes
+ 1605  kubectl get all
+ 1606  kubectl expose deployment hello-minikube --type=NodePort --port=8080
+ 1607  kubectl get all
+ 1608  kubectl services hello-minikube
+ 1609  minikuve services hello-minikube
+ 1610  minikube
+ 1611  minikube services hello-minikube
+ 1612  minikube service hello-minikube
+ 1613  kubectl get pod
+ 1614  kubectl delete pod hello-minikube-64b64df8c9-rdqwx
+ 1615  sudo docker image ls
+ 1616  sudo docker ps
+ 1617  kubectl all
+ 1618  kubectl get all
+ 1619  kubectl delete service hello-minijuve
+ 1620  kubectl delete service hello-minijube
+ 1621  kubectl delete service hello-minikube
+ 1622  kubectl delete deployment hello-minikube
+ 1623  kubectl get all
+ 1624  clear
+ 1625  kubectl get all
+ 1626  clear
+ 1627  kubectl create deployment hello-minikube --image=spring_boot_studentcrud
+ 1628  kubectl get all
+ 1629  kubectl delete service hello-minikube
+ 1630  kubectl get all
+ 1631  kubectl delete deployment hello-minikube
+ 1632  kubectl get all
+ 1633  clear
+ 1634  minikuve ssh
+ 1635  minikube ssh
+ 1636  clear
+ 1637  sudo docker run mysql
+ 1638  sudo docker ls
+ 1639  sudo docker a
+ 1640  sudo docker ps
+ 1641  sudo docker ps -a
+ 1642  sudo docker ps all
+ 1643  docker run -d -p 33060:3306 --name mysql-db -e MYSQL_ROOT_PASSWORD=1234
+ 1644  docker ps all
+ 1645  sudo docker run -d -p 33060:3306 --name mysql-db -e MYSQL_ROOT_PASSWORD=1234
+ 1646  docker ps
+ 1647  sudo docker ps
+ 1648  sudo docker run mysql --name mysql-db -e MYSQL_ROOT_PASSWORD=1234
+ 1649  sudo docker run -d -p 33060:3306 mysql --name mysql-db -e MYSQL_ROOT_PASSWORD=1234
+ 1650  sudo docker ls
+ 1651  sudo docker ps
+ 1652  sudo docker run -p 33060:3306 mysql --name mysql-db -e MYSQL_ROOT_PASSWORD=1234
+ 1653  sudo docker run -p 33060:3306 mysql --name mysql-db -e MYSQL_ROOT_PASSWORD=ubuntu1234
+ 1654  sudo docker run -p 33060:3306 mysql --name mysql-db -e MYSQL_ROOT_PASSWORD='ubuntu1234'
+ 1655  sudo docker run -p 33060:3306 --name mysql-db -e MYSQL_ROOT_PASSWORD='ubuntu1234' mysql .
+ 1656  sudo docker run -p 33060:3306 --name mysql-db -e MYSQL_ROOT_PASSWORD='ubuntu1234' mysql
+ 1657  sudo docker ls
+ 1658  sudo docker ps
+ 1659  sudo docker ps -a
+ 1660  sudo docker container rm mysql-db
+ 1661  sudo docker run -p 33060:3306 --name mysql-db -e MYSQL_ROOT_PASSWORD='ubuntu1234' mysql
+ 1662  exit
+ 1663  git status
+ 1664  git log
+ 1665  git add .
+ 1666  git commit -m "configuracion con mysql local"
+ 1667  git status
+ 1668  git add .
+ 1669  git commit -m "configuracion con mysql en docker container mysql-db"
+ 1670  git status
+ 1671  ls
+ 1672  docker build -t studentcrud .
+ 1673  sudo docker build -t studentcrud .
+ 1674  mvn clean package
+ 1675  sudo docker build -t studentcrud .
+ 1676  sudo docker image ls
+ 1677  sudo docker run --name:studentcrud -d -p 8080:8080 studentcrud
+ 1678  sudo docker run --help
+ 1679  history
+ 1680  sudo docker run --name studentcrud -d -p 8080:8080 studentcrud
+ 1681  sudo docker ps
+ 1682  sudo docker stop studentscrud
+ 1683  sudo docker ps
+ 1684  sudo docker stop studentcrud
+ 1685  sudo docker containers
+ 1686  sudo docker containe
+ 1687  sudo docker container ls
+ 1688  sudo docker container
+ 1689  sudo docker container ls -a
+ 1690  sudo docker container rm studentcrud
+ 1691  sudo docker run --name studentcrud -d -p 8080:8080 --link mysql-db studentcrud
+ 1692  sudo docker container ls
+ 1693  sudo docker stop studentcrud
+ 1694  sudo docker stop mysql-db
+ 1695  sudo docker container ls
+ 1696  history
+ 1697  history -->salida

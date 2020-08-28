@@ -1,0 +1,5 @@
+
+create table students.student (dni varchar(255) not null, email varchar(255), last_name varchar(255), mobile varchar(255), name varchar(255), primary key (dni)) engine=InnoDB;
+
+insert into students.student (email, last_name, mobile, name, dni) values ('hz@gmail.com', 'Zarzycki', 123456789, 'Hernan', 123456789);
+
